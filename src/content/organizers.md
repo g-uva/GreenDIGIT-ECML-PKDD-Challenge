@@ -1,0 +1,5 @@
+- **Gonçalo Ferreira** — Research Software Engineer, University of Amsterdam — g.j.teixeiradepinhoferreira@uva.nl
+- **Adnan Tahir** — Postdoctoral Researcher, University of Amsterdam — a.tahir2@uva.nl
+- **Catalin Condurache** — Senior Service Delivery Officer, EGI Foundation — catalin.condurache@egi.eu
+- **Kostas Chounos** — Postdoctoral Researcher, University of Thessaly — kostashn@gmail.com
+- **Shashikant Ilager** — Assistant Professor, University of Amsterdam — s.s.ilager@uva.nl

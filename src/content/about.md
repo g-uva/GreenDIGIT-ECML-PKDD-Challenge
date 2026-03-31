@@ -1,0 +1,5 @@
+GreenDIGIT addresses the need to reduce the environmental impact of digital research infrastructures (RIs) through data-driven approaches for monitoring, analysing, and improving sustainability performance. As digital infrastructures account for a growing share of global greenhouse gas emissions, the project takes an infrastructure-level view that covers energy consumption, carbon footprint, and other sustainability-relevant dimensions across RI operations.
+
+Within this context, the **Environmental Impact Metric Publication System (EIMPS)** serves as an enabling service for collecting and organising sustainability-related metrics from heterogeneous environments such as Grid, Cloud, and Network infrastructures.
+
+This challenge focuses on **predictive modelling** over operational and sustainability-related time-series data, inviting participants to forecast near-future site-level workload and environmental impact signals — such as jobs, energy consumption, and carbon footprint — in a mature production-like infrastructure setting.
