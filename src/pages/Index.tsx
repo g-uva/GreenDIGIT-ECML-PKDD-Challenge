@@ -1,6 +1,6 @@
 import { Github, ExternalLink } from 'lucide-react';
 import MarkdownSection from '@/components/MarkdownSection';
-import heroLogo from '@/assets/hero-logo.png';
+import heroLogo from '@/assets/cropped-GD_logo.png';
 
 import aboutContent from '@/content/about.md?raw';
 import datasetContent from '@/content/dataset.md?raw';
