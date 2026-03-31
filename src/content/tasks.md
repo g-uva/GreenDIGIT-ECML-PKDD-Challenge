@@ -7,11 +7,11 @@
 
 **Targets:** `energy_wh` and `cfp_g` (and optionally `records`).
 
-### Subtask A.1 — Missing/Invalid Signal Detection
+### Subtask A.1: Missing/Invalid Signal Detection
 
 For each 15-minute bucket, predict whether sustainability signals are valid versus missing/invalid (e.g., zero-filled or unavailable).
 
-### Subtask A.2 — Peak Detection
+### Subtask A.2: Peak Detection
 
 For each 15-minute bucket, predict whether the bucket corresponds to a peak event (extreme values), e.g., `energy_wh` or `cfp_g` above the 95th percentile.
 

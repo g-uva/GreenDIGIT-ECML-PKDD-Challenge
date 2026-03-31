@@ -2,4 +2,4 @@ GreenDIGIT addresses the need to reduce the environmental impact of digital rese
 
 Within this context, the **Environmental Impact Metric Publication System (EIMPS)** serves as an enabling service for collecting and organising sustainability-related metrics from heterogeneous environments such as Grid, Cloud, and Network infrastructures.
 
-This challenge focuses on **predictive modelling** over operational and sustainability-related time-series data, inviting participants to forecast near-future site-level workload and environmental impact signals — such as jobs, energy consumption, and carbon footprint — in a mature production-like infrastructure setting.
+This challenge focuses on **predictive modelling** over operational and sustainability-related time-series data, inviting participants to forecast near-future site-level workload and environmental impact signals - such as jobs, energy consumption, and carbon footprint - in a mature production-like infrastructure setting.

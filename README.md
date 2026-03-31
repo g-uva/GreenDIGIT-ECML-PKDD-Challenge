@@ -1,3 +1,6 @@
-# Welcome to your Lovable project
+### GreenDIGIT ECML-PKDD Discovery Challenge Website
 
-TODO: Document your project here
+1. To refresh the production
+```sh
+pnpm run build:deploy
+```

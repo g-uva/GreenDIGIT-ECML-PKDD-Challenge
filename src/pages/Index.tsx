@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   { label: 'Challenge Description', href: '#description' },
   { label: 'Submission', href: '#submission' },
   { label: 'Timeline', href: '#timeline' },
-  { label: 'Organizers', href: '#organizers' },
+  { label: 'Organisers', href: '#organizers' },
   { label: 'Partners', href: '#partners' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -68,7 +68,7 @@ const Index = () => {
       <header className="hero-gradient py-20 text-center">
         <div className="container max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold text-primary-foreground leading-tight mb-4">
-            ECML-PKDD 2026 — GreenDIGIT Challenge
+            ECML-PKDD 2026: GreenDIGIT Challenge
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-light mb-8">
             Predictive Modelling for Sustainable Digital Research Infrastructures
@@ -133,7 +133,7 @@ const Index = () => {
       </SectionWrapper>
 
       {/* Organizers */}
-      <SectionWrapper id="organizers" title="Organizers">
+      <SectionWrapper id="organizers" title="Organisers">
         <MarkdownSection content={organizersContent} />
       </SectionWrapper>
 
@@ -174,7 +174,7 @@ const Index = () => {
       <footer className="hero-gradient py-8 text-center">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-primary-foreground/80 text-sm">
-            © 2026 GreenDIGIT — ECML-PKDD Challenge. With the support of{' '}
+            © 2026 GreenDIGIT - ECML-PKDD Challenge. With the support of{' '}
             <a href="https://www.sobigdata.eu" className="underline text-primary-foreground">
               SoBigData RI
             </a>.

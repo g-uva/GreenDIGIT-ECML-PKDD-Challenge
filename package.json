@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "sync:nginx": "sudo rsync -a --delete dist/ /var/www/greendigit/",
+    "build:deploy": "pnpm run build && pnpm run sync:nginx",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
