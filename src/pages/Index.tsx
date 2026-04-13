@@ -1,6 +1,7 @@
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import MarkdownSection from '@/components/MarkdownSection';
 import heroLogo from '@/assets/cropped-GD_logo.png';
+import euFundedLogo from '@/assets/EU Funded POS 2.png';
 
 import aboutContent from '@/content/about.md?raw';
 import datasetContent from '@/content/dataset.md?raw';
@@ -21,7 +22,7 @@ const NAV_ITEMS = [
 
 const PARTNERS = [
   { name: 'SoBigData', url: 'https://www.sobigdata.eu' },
-  { name: 'GreenDIGIT', url: '#' },
+  { name: 'GreenDIGIT', url: 'https://greendigit-project.eu/' },
   { name: 'EGI Foundation', url: 'https://www.egi.eu' },
   { name: 'University of Amsterdam', url: 'https://www.uva.nl' },
   { name: 'University of Thessaly', url: 'https://www.uth.gr' },
@@ -81,6 +82,7 @@ const Index = () => {
             className="mx-auto mb-8"
           />
           <div className="flex justify-center gap-4 flex-wrap">
+            {/*
             <a
               href="#github"
               className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
@@ -98,6 +100,15 @@ const Index = () => {
               className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
               <ExternalLink size={18} /> Codabench
+            </a>
+            */}
+            <a
+              href="https://easychair.org/conferences2/submission_new?a=36547732"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              <ExternalLink size={18} /> EasyChair Submission
             </a>
           </div>
         </div>
@@ -172,7 +183,60 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="hero-gradient py-8 text-center">
-        <div className="container max-w-4xl mx-auto px-6">
+        <div className="container max-w-4xl mx-auto px-6 space-y-8">
+          <div className="max-w-3xl mx-auto rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 p-6 text-left">
+            <h3 className="text-2xl font-bold text-primary-foreground mb-4">Funding and acknowledgements</h3>
+            <p className="text-primary-foreground/85 text-base leading-7 mb-6">
+              This work is funded from the European Union&apos;s Horizon Europe research and innovation
+              programme through the{' '}
+              <a
+                href="https://greendigit-project.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground underline underline-offset-4"
+              >
+                GreenDIGIT project
+              </a>
+              , under the grant agreement No.{' '}
+              <a
+                href="https://cordis.europa.eu/project/id/101131207"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground underline underline-offset-4"
+              >
+                101131207
+              </a>
+              .
+            </p>
+            <div className="flex flex-wrap items-center gap-6">
+              <a
+                href="https://cordis.europa.eu/project/id/101131207"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+                aria-label="European Union funding acknowledgement"
+              >
+                <img
+                  src={euFundedLogo}
+                  alt="Funded by the European Union"
+                  className="h-auto max-h-[50px] w-auto"
+                />
+              </a>
+              <a
+                href="https://greendigit-project.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+                aria-label="GreenDIGIT project"
+              >
+                <img
+                  src={heroLogo}
+                  alt="GreenDIGIT"
+                  className="h-auto max-h-[100px] w-auto"
+                />
+              </a>
+            </div>
+          </div>
           <p className="text-primary-foreground/80 text-sm">
             © 2026 GreenDIGIT - ECML-PKDD Challenge. With the support of{' '}
             <a href="https://www.sobigdata.eu" className="underline text-primary-foreground">
