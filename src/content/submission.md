@@ -9,4 +9,4 @@ Submissions must include:
 
 **Reproducibility requirement (mandatory):** Submissions must be runnable end-to-end by organisers. Non-runnable submissions are disqualified regardless of leaderboard score.
 
-Submit your solutions through [Codabench](#codabench).
+Submit your solutions through the EasyChair Submission button above.

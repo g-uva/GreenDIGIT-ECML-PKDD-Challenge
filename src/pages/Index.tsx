@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import MarkdownSection from '@/components/MarkdownSection';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import heroLogo from '@/assets/cropped-GD_logo.png';
 import euFundedLogo from '@/assets/EU Funded POS 2.png';
 
@@ -81,7 +82,8 @@ const Index = () => {
             height={200}
             className="mx-auto mb-8"
           />
-          <div className="flex justify-center gap-4 flex-wrap">
+          <TooltipProvider>
+            <div className="flex justify-center gap-4 flex-wrap">
             {/*
             <a
               href="#github"
@@ -103,14 +105,36 @@ const Index = () => {
             </a>
             */}
             <a
-              href="https://easychair.org/conferences2/submission_new?a=36547732"
+              href="https://forms.gle/XbTHLFrGu1Bya5EJ6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
-              <ExternalLink size={18} /> EasyChair Submission
+              <ExternalLink size={18} /> Registration Form
             </a>
-          </div>
+            <a
+              href="https://accounts.d4science.org/auth/realms/d4science/protocol/openid-connect/auth?scope=openid&response_type=code&state=9C47EAB8913E5FB9704A0A9E10F4F795.lr62-02&redirect_uri=https%3A%2F%2Fsobigdata.d4science.org%2Fc%2Fportal%2Flogin&login=true&client_id=sobigdata.d4science.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              <ExternalLink size={18} /> Jupyter Lab VRE
+            </a>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <span
+                    aria-disabled="true"
+                    className="inline-flex cursor-not-allowed items-center gap-2 rounded-lg bg-primary-foreground/70 px-5 py-2.5 font-semibold text-primary/70 opacity-70"
+                  >
+                    <ExternalLink size={18} /> EasyChair Submission
+                  </span>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>registration opens soon.</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
+          </TooltipProvider>
         </div>
       </header>
 
