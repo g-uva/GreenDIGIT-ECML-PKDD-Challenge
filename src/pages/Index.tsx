@@ -158,7 +158,7 @@ const Index = () => {
       </SectionWrapper>
 
       {/* Submission */}
-      <SectionWrapper id="submission" title="Submission">
+      <SectionWrapper id="submission" title="Registration and Submission">
         <MarkdownSection content={submissionContent} />
       </SectionWrapper>
 

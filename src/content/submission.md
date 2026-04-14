@@ -1,3 +1,12 @@
+## Registration
+
+1. Fill in the Registration Form.
+2. Get access to the VRE for the materials and computation resources.
+3. Submit your abstract.
+4. Evaluation, approval, and camera-ready version.
+
+## Submission
+
 All participants are required to submit the complete code used in their solution, and the code must be executable on the data provided for the challenge.
 
 Submissions must include:
