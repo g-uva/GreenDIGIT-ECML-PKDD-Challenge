@@ -1,8 +1,12 @@
 import { ExternalLink } from 'lucide-react';
 import MarkdownSection from '@/components/MarkdownSection';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import heroLogo from '@/assets/cropped-GD_logo.png';
-import euFundedLogo from '@/assets/EU Funded POS 2.png';
+import heroLogo from '@/assets/greendigit-logo.png';
+import euFundedLogo from '@/assets/eu-funded-logo.png';
+import egiLogo from '@/assets/egi-logo.png';
+import soBigDataLogo from '@/assets/sobigdata-logo.png';
+import uvaLogo from '@/assets/uva-logo.webp';
+import uthLogo from '@/assets/uth-logo.png';
 
 import aboutContent from '@/content/about.md?raw';
 import datasetContent from '@/content/dataset.md?raw';
@@ -22,11 +26,11 @@ const NAV_ITEMS = [
 ];
 
 const PARTNERS = [
-  { name: 'SoBigData', url: 'https://www.sobigdata.eu' },
-  { name: 'GreenDIGIT', url: 'https://greendigit-project.eu/' },
-  { name: 'EGI Foundation', url: 'https://www.egi.eu' },
-  { name: 'University of Amsterdam', url: 'https://www.uva.nl' },
-  { name: 'University of Thessaly', url: 'https://www.uth.gr' },
+  { name: 'SoBigData', url: 'https://www.sobigdata.eu', logo: soBigDataLogo, logoAlt: 'SoBigData logo', logoClassName: 'max-h-[56px]' },
+  { name: 'GreenDIGIT', url: 'https://greendigit-project.eu/', logo: heroLogo, logoAlt: 'GreenDIGIT logo' },
+  { name: 'EGI Foundation', url: 'https://www.egi.eu', logo: egiLogo, logoAlt: 'EGI Foundation logo' },
+  { name: 'University of Amsterdam', url: 'https://www.uva.nl', logo: uvaLogo, logoAlt: 'University of Amsterdam logo' },
+  { name: 'University of Thessaly', url: 'https://www.uth.gr', logo: uthLogo, logoAlt: 'University of Thessaly logo' },
 ];
 
 const SectionWrapper = ({
@@ -112,25 +116,23 @@ const Index = () => {
             >
               <ExternalLink size={18} /> Registration Form
             </a>
-            <a
-              href="https://accounts.d4science.org/auth/realms/d4science/protocol/openid-connect/auth?scope=openid&response_type=code&state=9C47EAB8913E5FB9704A0A9E10F4F795.lr62-02&redirect_uri=https%3A%2F%2Fsobigdata.d4science.org%2Fc%2Fportal%2Flogin&login=true&client_id=sobigdata.d4science.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            <span
+              aria-disabled="true"
+              className="inline-flex cursor-not-allowed items-center gap-2 rounded-lg bg-primary-foreground/70 px-5 py-2.5 font-semibold text-primary/70 opacity-70"
             >
-              <ExternalLink size={18} /> Jupyter Lab VRE
-            </a>
+              <ExternalLink size={18} /> Challenge VRE
+            </span>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <span
                     aria-disabled="true"
                     className="inline-flex cursor-not-allowed items-center gap-2 rounded-lg bg-primary-foreground/70 px-5 py-2.5 font-semibold text-primary/70 opacity-70"
                   >
-                    <ExternalLink size={18} /> EasyChair Submission
+                    <ExternalLink size={18} /> Final Submission
                   </span>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>registration opens soon.</p>
+                  <p>Registration opens soon.</p>
                 </TooltipContent>
               </Tooltip>
             </div>
@@ -181,8 +183,15 @@ const Index = () => {
               href={p.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-background border border-border rounded-xl px-8 py-5 text-foreground font-semibold hover:shadow-md transition-shadow text-center min-w-[180px]"
+              className="flex min-h-[180px] min-w-[220px] flex-col items-center justify-center gap-4 rounded-xl border border-border bg-background px-8 py-5 text-center font-semibold text-foreground transition-shadow hover:shadow-md"
             >
+              {p.logo ? (
+                <img
+                  src={p.logo}
+                  alt={p.logoAlt}
+                  className={`mx-auto h-auto max-h-[72px] w-auto object-contain ${p.logoClassName ?? ''}`}
+                />
+              ) : null}
               {p.name}
             </a>
           ))}
