@@ -169,6 +169,22 @@ const Index = () => {
         <MarkdownSection content={timelineContent} />
       </SectionWrapper>
 
+      {/* Contact */}
+      <section id="contact" className="py-16">
+        <div className="container max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Contact</h2>
+          <p className="text-lg text-muted-foreground mb-2">
+            For questions about the challenge, reach us at:
+          </p>
+          <a
+            href="mailto:PKDDchallenge@SoBigData.eu"
+            className="text-xl font-semibold text-accent hover:underline"
+          >
+            PKDDchallenge@SoBigData.eu
+          </a>
+        </div>
+      </section>
+
       {/* Organizers */}
       <SectionWrapper id="organizers" title="Organisers">
         <MarkdownSection content={organizersContent} />
@@ -197,22 +213,6 @@ const Index = () => {
           ))}
         </div>
       </SectionWrapper>
-
-      {/* Contact */}
-      <section id="contact" className="py-16">
-        <div className="container max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Contact</h2>
-          <p className="text-lg text-muted-foreground mb-2">
-            For questions about the challenge, reach us at:
-          </p>
-          <a
-            href="mailto:PKDDchallenge@SoBigData.eu"
-            className="text-xl font-semibold text-accent hover:underline"
-          >
-            PKDDchallenge@SoBigData.eu
-          </a>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="hero-gradient py-8 text-center">

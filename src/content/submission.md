@@ -1,6 +1,13 @@
+## Awards
+
+- Interview published in a blog post and a dedicated page on the next SoBigData Magazine and formal recognition.
+- Outstanding participants may also be considered for inclusion in a joint publication describing the challenge outcomes.
+- Additinal prizes may be introduced if sponsorship funding becomes available.
+
 ## Registration
 
-1. Fill in the Registration Form.
+1. Fill in the [Registration Form](https://forms.gle/iTw89KPXiELYNndn9).
+2. Register in the SoBigData platform (an email will be sent).
 2. Get access to the VRE for the materials and computation resources.
 3. Submit your abstract.
 4. Evaluation, approval, and camera-ready version.
