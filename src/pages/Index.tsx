@@ -1,6 +1,5 @@
 import { ExternalLink, Github } from 'lucide-react';
 import MarkdownSection from '@/components/MarkdownSection';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import heroLogo from '@/assets/greendigit-logo.png';
 import euFundedLogo from '@/assets/eu-funded-logo.png';
 import egiLogo from '@/assets/egi-logo.png';
@@ -86,8 +85,7 @@ const Index = () => {
             height={200}
             className="mx-auto mb-8"
           />
-          <TooltipProvider>
-            <div className="flex justify-center gap-4 flex-wrap">
+          <div className="flex justify-center gap-4 flex-wrap">
             <a
               href="https://github.com/GreenDIGIT-project/greendigit-ecml-pkdd-2026-challenge"
               target="_blank"
@@ -124,21 +122,15 @@ const Index = () => {
             >
               <ExternalLink size={18} /> Challenge VRE
             </a>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <span
-                    aria-disabled="true"
-                    className="inline-flex cursor-not-allowed items-center gap-2 rounded-lg bg-primary-foreground/70 px-5 py-2.5 font-semibold text-primary/70 opacity-70"
-                  >
-                    <ExternalLink size={18} /> Final Submission
-                  </span>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Registration opens soon.</p>
-                </TooltipContent>
-              </Tooltip>
-            </div>
-          </TooltipProvider>
+            <a
+              href="https://forms.gle/4z1itungej5HEkLW9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              <ExternalLink size={18} /> Final Submission
+            </a>
+          </div>
         </div>
       </header>
 
