@@ -25,7 +25,7 @@ Submissions must include:
 - All necessary pre-processing steps
 - A complete specification of libraries, dependencies, and tools
 - A final report (max 4 pages) describing the process and results
-- Supporting materials sent to **PKDDchallenge@SoBigData.eu** before the deadline
+- Supporting materials sent to **[g.j.teixeiradepinhoferreira@uva.nl](mailto:g.j.teixeiradepinhoferreira@uva.nl)** before the deadline
 
 **Reproducibility requirement (mandatory):** Submissions must be runnable end-to-end by organisers. Non-runnable submissions are disqualified regardless of leaderboard score.
 
@@ -35,9 +35,7 @@ The main submission platform is EasyChair. The "Final Submission" button above w
 
 Participants should submit their final solution by email as a ZIP file containing the complete submission repository.
 
-Submissions should be sent to: [PKDDChallenge@SoBigData.eu](mailto:PKDDChallenge@SoBigData.eu)
-
-For submission-related questions, participants may also contact: [g.j.teixeiradepinhoferreira@uva.nl](mailto:g.j.teixeiradepinhoferreira@uva.nl)
+Submissions should be sent to: [g.j.teixeiradepinhoferreira@uva.nl](mailto:g.j.teixeiradepinhoferreira@uva.nl)
 
 The ZIP file should include all source code, configuration files, dependency specifications, and instructions required to reproduce the submitted results.
 
