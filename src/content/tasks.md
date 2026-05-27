@@ -2,6 +2,8 @@
 
 **Objective:** Given historical observations up to time *t*, predict targets at *t + h* for fixed horizons.
 
+Evaluation will use a private dataset corresponding to the next months after the public challenge dataset. Participants should train and validate their methods on the public dataset; final scores will be computed on the private evaluation data.
+
 - **1h ahead:** h = 60 minutes (4 steps of 15 minutes)
 - **24h ahead:** h = 1440 minutes (96 steps of 15 minutes)
 

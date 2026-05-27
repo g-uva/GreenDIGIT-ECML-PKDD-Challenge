@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import MarkdownSection from '@/components/MarkdownSection';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import heroLogo from '@/assets/greendigit-logo.png';
@@ -88,14 +88,15 @@ const Index = () => {
           />
           <TooltipProvider>
             <div className="flex justify-center gap-4 flex-wrap">
-            {/*
             <a
-              href="#github"
+              href="https://github.com/GreenDIGIT-project/greendigit-ecml-pkdd-2026-challenge"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
               <Github size={18} /> GitHub
             </a>
-            <a
+            {/* <a
               href="#huggingface"
               className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
@@ -106,8 +107,7 @@ const Index = () => {
               className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
               <ExternalLink size={18} /> Codabench
-            </a>
-            */}
+            </a> */}
             <a
               href="https://forms.gle/XbTHLFrGu1Bya5EJ6"
               target="_blank"
@@ -116,12 +116,14 @@ const Index = () => {
             >
               <ExternalLink size={18} /> Registration Form
             </a>
-            <span
-              aria-disabled="true"
-              className="inline-flex cursor-not-allowed items-center gap-2 rounded-lg bg-primary-foreground/70 px-5 py-2.5 font-semibold text-primary/70 opacity-70"
+            <a
+              href="https://sobigdata.d4science.org/group/greendigit_pkdd2026_challenge/jupyterhub-at-google-cloud"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
               <ExternalLink size={18} /> Challenge VRE
-            </span>
+            </a>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <span

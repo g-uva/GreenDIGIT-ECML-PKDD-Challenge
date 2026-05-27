@@ -1,5 +1,9 @@
 The released dataset contains **3 anonymised grid site time series** aggregated into 15-minute buckets spanning approximately 3.7 months of data. Derived hourly and daily aggregates are provided as sums of 15-minute buckets.
 
+The public challenge dataset is available both in the GitHub repository and in the VRE folders. Both locations include aggregated granular data. The raw data is available only through the VRE because of its size.
+
+The VRE provides a ready-to-use Jupyter Notebook environment for participants to work conveniently with the data and develop their models. It is available through the Challenge VRE button above and directly at [https://sobigdata.d4science.org/group/greendigit_pkdd2026_challenge/jupyterhub-at-google-cloud](https://sobigdata.d4science.org/group/greendigit_pkdd2026_challenge/jupyterhub-at-google-cloud).
+
 | RI | Span (months) | Continuity (%) | Zero CFP (%) | Total records |
 |---|---|---|---|---|
 | site-ff5cef309f | 3.70 | 90.76 | 0.448 | 1,655,596 |
